@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Petal Paradise</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="icon" type="image/png" href="./logo2.png">
+
+</head>
+<body>
+    
+<!-- header starts  -->
+   <header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <!-- <div class="logo-container">
+        <img src="./logo1.png" alt="Company Logo" class="logo">
+    </div> -->
+
+    <a href="#" class="logo">Petal Paradise <span></span></a>
+
+    
+
+    <nav class="navbar" >
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./products.html">Products</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="./contactus.html">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+       
+        <a href="#" class="fas fa-heart"></a>   
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+   
+    </div>
+   </header>
+<!-- header ends  -->
+
+   <!-- home section starts -->
+
+   <section class="home" id="home">
+
+    <div class="content">
+        <h3>Welcome to Petal Paradise</h3>
+        <span>Natural & Beautiful Flowers</span>
+        <p>At Petal Paradise, we believe that every flower tells a story. Whether you’re celebrating a special occasion, expressing love, or simply brightening someone’s day, 
+            our hand-picked, fresh blooms are perfect for every moment. Explore our wide range of beautiful arrangements, and let us help you find the perfect petals to convey your emotions. Experience the art of gifting with Petal Paradise, 
+            where nature’s beauty meets thoughtful design.</p>
+            <a href="./products.html" class="btn">Shop Now</a>
+        </div>
+
+   </section>
+
+    <!-- home section ends -->
+
+
+
+    <section class="intro" id="intro">
+
+        <p> Welcome to Petal Paradise, your ultimate online destination for exquisite floral arrangements and enchanting blooms. At Petal Paradise, we believe that flowers have the power to convey emotions, celebrate special moments, and bring joy to everyday life. Our carefully curated selection of fresh flowers and unique arrangements is designed to cater to every occasion, 
+            from birthdays and anniversaries to weddings and heartfelt expressions of love and sympathy. With a passion for beauty and a commitment to quality, we take pride in delivering the finest flowers right to your doorstep. Explore our vibrant collection and let Petal Paradise 
+            help you express your sentiments with nature's most beautiful creations. </p>
+
+    </section>
+
+    
+    
+
+    
+
+    <!-- product section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">
+            
+            <!-- Most Popular <span>Products</span> -->
+
+
+            
+                <script language="JavaScript1.2">
+                
+                /*
+                Neon Lights Text
+                By JavaScript Kit (http://javascriptkit.com)
+                For this script, TOS, and 100s more DHTML scripts,
+                Visit http://www.dynamicdrive.com
+                */
+                
+                var message="Most Popular Products"
+                var neonbasecolor="gray"
+                var neontextcolor="magenta"
+                var flashspeed=100  //in milliseconds
+                
+                ///No need to edit below this line/////
+                
+                var n=0
+                if (document.all||document.getElementById){
+                document.write('<font color="'+neonbasecolor+'">')
+                for (m=0;m<message.length;m++)
+                document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+                document.write('</font>')
+                }
+                else
+                document.write(message)
+                
+                function crossref(number){
+                var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+                return crossobj
+                }
+                
+                function neon(){
+                
+                //Change all letters to base color
+                if (n==0){
+                for (m=0;m<message.length;m++)
+                //eval("document.all.neonlight"+m).style.color=neonbasecolor
+                crossref(m).style.color=neonbasecolor
+                }
+                
+                //cycle through and change individual letters to neon color
+                crossref(n).style.color=neontextcolor
+                
+                if (n<message.length-1)
+                n++
+                else{
+                n=0
+                clearInterval(flashing)
+                setTimeout("beginneon()",1500)
+                return
+                }
+                }
+                
+                function beginneon(){
+                if (document.all||document.getElementById)
+                flashing=setInterval("neon()",flashspeed)
+                }
+                beginneon()
+                
+                
+                </script>
+                
+        
+        
+        
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="./rose3.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="./rose.html" class="cart-btn">Buy Now</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>Rose Flowers</h3>
+                    <div class="price">$12.99 <span>$15.99</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="./tulip2.webp" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Buy Now</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>Tulip Flowers</h3>
+                    <div class="price">$12.99 <span>$15.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="./daisy3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Buy Now</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>Daisy Flowers</h3>
+                    <div class="price">$12.99 <span>$15.99</span></div>
+                </div>
+            </div>
+
+            
+
+
+            <a href="./products.html" class="btn">View All Products</a>
+
+
+        </div>
+    </section>
+
+    <!-- product section ends  -->
+
+
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+
+            <img src="./freedelivery2.png" alt="">
+        <div class="info">
+            <h3>Free Delivery</h3>
+            <span>on all orders</span>
+        </div>
+        </div>
+
+        <div class="icons">
+
+            <img src="./cashback2.png" alt="">
+        <div class="info">
+            <h3>10 Days Returns</h3>
+            <span>Moneyback Guarantee</span>
+        </div>
+        </div>
+
+        <div class="icons">
+
+            <img src="./gift2.png" alt="">
+        <div class="info">
+            <h3>Offer & Gifts</h3>
+            <span>on all orders</span>
+        </div>
+        </div>
+
+        <div class="icons">
+
+            <img src="./payment2.png" alt="">
+        <div class="info">
+            <h3>Secure Payments</h3>
+            <span>Protected by Paypal</span>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- icons section ends  -->
+
+
+
+
+
+    <!-- about us section starts  -->
+
+    <section class="aboutus" id="aboutus">
+
+        <h1 class="heading"> <span> About</span> Us</h1>
+
+        <div class="row">
+
+        <div class="video-container">
+
+            <video src="./flower.mp4" loop autoplay muted></video>
+            <h3>Best Flower Sellers</h3>
+
+        </div>
+        
+
+        <div class="content">
+
+            <!-- <h3>Why You Choose Us?</h3> -->
+            <p>At Petal Paradise, we are passionate about bringing the vibrant beauty of Sri Lanka’s flowers to the world. Our journey began with a simple love for nature’s finest creations, and today, we proudly export an exquisite selection of fresh, hand-picked blooms to customers across the globe. Whether you’re looking for delicate roses, exotic orchids, or cheerful sunflowers, our flowers are carefully 
+                cultivated and selected to ensure they arrive in perfect condition, 
+                no matter where you are. </p>
+            <p>We believe that flowers have the power to convey emotions and transform spaces. That’s why at Petal Paradise, we are committed to quality, sustainability, and customer satisfaction. From our fields to your doorstep, we ensure that every bouquet reflects the beauty and care that go into its creation. 
+                Let us help you celebrate life’s special moments with the timeless elegance of flowers. </p>
+            <a href="./aboutus.html" class="btn">Learn More</a>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- about us section ends  -->
+
+
+
+    
+
+
+    
+    <!-- contactus section starts  -->
+
+    <section class="contactus" id="contactus">
+
+        <h1 class="heading"> <span>Reach Us </span> Anytime!</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Number" class="box">
+                <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send message" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="./contact1.jpg" alt="">
+            </div>
+        </div>
+    </section> 
+
+
+    <!-- contactus section ends  -->
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer" id="footer">
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./logo2.png" alt="">
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+94 71 880 3311</a>
+                <a href="#">petalparadise@gmail.com</a>
+                <a href="#">100, Colombo 10, Sri Lanka</a>
+                <!-- <img src="./footer2.png" alt=""> -->
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="./index.html">Home</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./products.html">Products</a>
+                <a href="./reviews.html">Reviews</a>
+                <a href="./contactus.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#">My Account</a>
+                <a href="#">My Order</a>
+                <a href="#">My Favorites</a>
+
+
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="box">
+                <h3>Locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div> -->
+
+            
+        </div>
+
+        <div class="credit">Created By <span>S.P.P.Jayalath</span>
+            | All Rights Reserved
+        </div>
+
+   
+    </section>
+
+
+    <!-- footer section ends  -->
+
+    
+</body>
+</html>

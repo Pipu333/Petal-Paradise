@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Products - Petal Paradise</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./rose.css">
+
+    <link rel="icon" type="image/png" href="./logo2.png">
+
+</head>
+<body>
+    
+<!-- header starts  -->
+   <header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">Petal Paradise <span></span></a>
+
+
+    <nav class="navbar" >
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./products.html">Products</a>
+        <a href="./reviews.html">Reviews</a>
+        <a href="./contactus.html">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+       
+        <a href="#" class="fas fa-heart"></a>   
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+   
+    </div>
+   </header>
+<!-- header ends  -->
+
+
+<!-- rose section starts -->
+
+
+<section class="rose" id="rose">
+
+<div class="product-container">
+    <div class="product-images">
+        <img src="./rose1.jpeg" alt="Main Product Image" class="main-image" id="mainImage">
+        <div class="thumbnail-images">
+            <img src="./rose2.jpg" alt="Thumbnail 1" onclick="changeImage('./rose2.jpg')">
+            <img src="./rose3.png" alt="Thumbnail 2" onclick="changeImage('./rose3.png')">
+            <img src="./rose1.jpeg" alt="Thumbnail 3" onclick="changeImage('./rose1.jpeg')">
+            <img src="./rose2.jpg" alt="Thumbnail 1" onclick="changeImage('./rose2.jpg')">
+            <img src="./rose3.png" alt="Thumbnail 2" onclick="changeImage('./rose3.png')">
+            <img src="./rose1.jpeg" alt="Thumbnail 3" onclick="changeImage('./rose1.jpeg')">
+        </div>
+    </div>
+    <div class="product-details">
+        <h1>Rose Flowers </h1>
+        <p class="price">$99.99</p>
+
+        <a href="#" class="btn">Buy Now</a>
+
+
+        <p class="description">
+
+            At Petal Paradise, we understand that roses are not just flowers—they're an expression of love, 
+            admiration, and elegance. Our rose collection is meticulously curated to offer you the finest blooms, 
+            perfect for any occasion, whether local or global. Whether you desire a romantic bouquet, an elegant arrangement, 
+            or something uniquely customized, our roses are crafted to leave a lasting impression.
+        </p>
+
+        <!-- <button class="buy-now">Buy Now</button> -->
+
+        <h2> Features of Our Rose Flowers</h2>
+
+
+        <ul class="des2">
+            <li><b>Premium Quality Roses: </b>Our roses are sourced from the finest growers, ensuring each flower boasts vibrant color, rich fragrance, and long-lasting freshness.
+                 Hand-picked and carefully selected, these roses are the epitome of quality and beauty.</li>
+
+            <li><b>Variety of Colors and Styles:</b> Choose from an array of colors—romantic reds, pure whites, sunny yellows, soft pinks, and exotic blues. 
+                    Each color carries its unique symbolism, allowing you to convey your emotions perfectly.</li>
+            
+            <li><b>Expertly Crafted Arrangements:</b> Every bouquet and arrangement is thoughtfully designed by our skilled florists. Whether it’s a simple 
+                hand-tied bouquet or an elaborate arrangement, each creation is a work of art that reflects your sentiments.</li>
+
+            <li><b>Local and Global Delivery:</b> We offer seamless delivery services both locally and internationally. No matter where your 
+                loved ones are, you can trust Petal Paradise to deliver fresh and beautiful roses right to their door.</li>
+
+            <li><b>Customizable Options:</b> Personalize your roses with custom arrangements, varying stem lengths, and unique packaging options. Add a heartfelt message or 
+                select from additional add-ons like chocolates or greeting cards to make your gift extra special.</li>
+        </ul>
+
+
+        </div>
+
+    
+</div>
+
+
+<div class="product-container2">
+
+    <H2><center>
+
+        <script language="JavaScript1.2">
+                
+            /*
+            Neon Lights Text
+            By JavaScript Kit (http://javascriptkit.com)
+            For this script, TOS, and 100s more DHTML scripts,
+            Visit http://www.dynamicdrive.com
+            */
+            
+            var message="Order Your Roses from Petal Paradise Today!"
+            var neonbasecolor="black"
+            var neontextcolor="magenta"
+            var flashspeed=100  //in milliseconds
+            
+            ///No need to edit below this line/////
+            
+            var n=0
+            if (document.all||document.getElementById){
+            document.write('<font color="'+neonbasecolor+'">')
+            for (m=0;m<message.length;m++)
+            document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+            document.write('</font>')
+            }
+            else
+            document.write(message)
+            
+            function crossref(number){
+            var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+            return crossobj
+            }
+            
+            function neon(){
+            
+            //Change all letters to base color
+            if (n==0){
+            for (m=0;m<message.length;m++)
+            //eval("document.all.neonlight"+m).style.color=neonbasecolor
+            crossref(m).style.color=neonbasecolor
+            }
+            
+            //cycle through and change individual letters to neon color
+            crossref(n).style.color=neontextcolor
+            
+            if (n<message.length-1)
+            n++
+            else{
+            n=0
+            clearInterval(flashing)
+            setTimeout("beginneon()",1500)
+            return
+            }
+            }
+            
+            function beginneon(){
+            if (document.all||document.getElementById)
+            flashing=setInterval("neon()",flashspeed)
+            }
+            beginneon()
+            
+            
+            </script>
+
+    </center></H2>
+
+
+    <p>Whether you’re celebrating a milestone, expressing love, or just brightening someone’s day, Petal Paradise has the perfect rose bouquet or arrangement for you. Browse our collection, select 
+        your favorites, and let us deliver the timeless beauty of roses to your loved ones, anywhere in the world.</p>
+
+
+
+<h3> Benefits of Choosing Petal Paradise Roses</h3>
+
+
+        <ul class="des2">
+            <li><b>Perfect for Every Occasion: </b>Our roses are versatile and ideal for any occasion—birthdays, 
+                anniversaries, weddings, Valentine’s Day, or simply to say "I love you" or "I’m thinking of you."</li>
+
+            <li><b>Long-Lasting Freshness: </b> With proper care, our roses can remain fresh and vibrant for up to a week or more, 
+                allowing you to enjoy their beauty for an extended period.</li>
+            
+            <li><b>Expressive and Meaningful: </b> Each color and arrangement is designed to convey specific emotions, making it 
+                easy to send the right message to your loved ones.</li>
+
+            <li><b>Convenient and Reliable:</b> Our easy-to-navigate website and reliable delivery services make ordering roses a 
+                hassle-free experience, whether you’re sending them locally or across the globe.</li>
+
+            
+        </ul>
+
+<!-- </div> -->
+
+
+<!-- <div class="product-container2"> -->
+
+    <h3>Usage Instructions for Maintaining Freshness</h3>
+    
+    <p>To ensure your roses stay as beautiful as the day they arrive, follow these simple care steps:</p>
+
+            <ul class="des2">
+                <li><b>Unpack Carefully:</b>Gently remove the roses from their packaging upon arrival. 
+                    Be cautious not to damage the delicate petals.</li>
+    
+                <li><b>Trim the Stems: </b> Using a sharp, clean pair of scissors or pruning shears, cut the stems at a 45-degree angle. Trimming them 
+                    under running water can help prevent air from entering the stems, ensuring better water absorption.</li>
+                
+                <li><b>Prepare the Vase: </b> Fill a clean vase with fresh, cool water and add the flower food provided in your package. Stir until the 
+                    food is fully dissolved to nourish the roses and extend their life.</li>
+    
+                <li><b>Arrange Thoughtfully:</b>  Place the roses in the vase, ensuring that no leaves are submerged in the water, as this can lead to 
+                    decay. Arrange them in a way that allows each rose to stand out.</li>
+
+                <li><b>Ideal Placement:</b>  Keep your vase in a cool, shaded area away from direct sunlight, heating vents, or drafts. This will help 
+                    preserve the roses’ color and freshness.</li>
+    
+                
+            </ul>
+
+
+           
+    
+    </div> 
+    
+
+
+
+
+<script src="rosescript.js"></script>
+
+</section>
+
+
+<!-- rose section ends -->
+
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+
+        <img src="./freedelivery2.png" alt="">
+    <div class="info">
+        <h3>Free Delivery</h3>
+        <span>on all orders</span>
+    </div>
+    </div>
+
+    <div class="icons">
+
+        <img src="./cashback2.png" alt="">
+    <div class="info">
+        <h3>10 Days Returns</h3>
+        <span>Moneyback Guarantee</span>
+    </div>
+    </div>
+
+    <div class="icons">
+
+        <img src="./gift2.png" alt="">
+    <div class="info">
+        <h3>Offer & Gifts</h3>
+        <span>on all orders</span>
+    </div>
+    </div>
+
+    <div class="icons">
+
+        <img src="./payment2.png" alt="">
+    <div class="info">
+        <h3>Secure Payments</h3>
+        <span>Protected by Paypal</span>
+    </div>
+    </div>
+
+</section>
+
+<!-- icons section ends  -->
+
+
+
+
+
+
+
+
+
+    <!-- reviews section starts  -->
+
+    <!-- <section class="reviews" id="reviews">
+
+        <h1 class="heading">Customers' <span>Reviews</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam quis quaerat nihil pariatur enim quia ratione adipisci maxime expedita impedit neque accusantium harum, 
+                    consectetur id sapiente sunt dolorem dicta?</p>
+
+                <div class="user">
+                    <img src="./cus1.webp" alt="">
+                    <div class="user-info">
+                        <h3>James Lucas</h3>
+                        <span>Happy Customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam quis quaerat nihil pariatur enim quia ratione adipisci maxime expedita impedit neque accusantium harum, 
+                    consectetur id sapiente sunt dolorem dicta?</p>
+
+                <div class="user">
+                    <img src="./cus2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Olivia Peris</h3>
+                        <span>Happy Customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam quis quaerat nihil pariatur enim quia ratione adipisci maxime expedita impedit neque accusantium harum, 
+                    consectetur id sapiente sunt dolorem dicta?</p>
+
+                <div class="user">
+                    <img src="./cus3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Michel Smith</h3>
+                        <span>Happy Customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam quis quaerat nihil pariatur enim quia ratione adipisci maxime expedita impedit neque accusantium harum, 
+                    consectetur id sapiente sunt dolorem dicta?</p>
+
+                <div class="user">
+                    <img src="./cus4.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Luvis Rodrigo</h3>
+                        <span>Happy Customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+
+
+        </div>
+    </section> -->
+
+
+    <!-- reviews section ends  -->
+
+
+    
+    
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer" id="footer">
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./logo2.png" alt="">
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+123-456-7898</a>
+                <a href="#">petalparadise@gmail.com</a>
+                <a href="#">mumbayi, India - 40012</a>
+                <!-- <img src="./footer2.png" alt=""> -->
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="./index.html">Home</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./products.html">Products</a>
+                <a href="./reviews.html">Reviews</a>
+                <a href="./contactus.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#">My Account</a>
+                <a href="#">My Order</a>
+                <a href="#">My Favorites</a>
+
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="box">
+                <h3>Locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div> -->
+
+            
+
+
+
+        </div>
+
+        <div class="credit">Created By <span>S.P.P.Jayalath</span>
+            | All Rights Reserved
+        </div>
+
+   
+    </section>
+
+
+    <!-- footer section ends  -->
+
+
+    
+</body>
+</html>
